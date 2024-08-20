@@ -1,0 +1,7 @@
+name: simple-workflow
+on: [push]
+jobs:
+  explore-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "The job was automatically triggered by a ${{github.event_name}} event."
